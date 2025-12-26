@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team Ross | Multimedia & Sports Journalism</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #0f172a;
+      --secondary: #1e293b;
+      --accent: #38bdf8;
+      --light: #f8fafc;
+      --gray: #94a3b8;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--primary);
+      color: var(--light);
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    header {
+      background: var(--secondary);
+      padding: 1rem 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      color: var(--accent);
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: var(--light);
+      font-weight: 400;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    /* Hero */
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.8)), url('hero.jpg') center/cover no-repeat;
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      color: var(--gray);
+    }
+
+    /* Sections */
+    section {
+      padding: 4rem 5%;
+    }
+
+    section h3 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2.5rem;
+      color: var(--accent);
+    }
+
+    /* Services */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card {
+      background: var(--secondary);
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+
+    .service-card h4 {
+      margin-bottom: 1rem;
+      color: var(--light);
+    }
+
+    .service-card p {
+      color: var(--gray);
+      font-size: 0.95rem;
+    }
+
+    /* Portfolio Gallery */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    /* About */
+    .about {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      color: var(--gray);
+    }
+
+    /* Contact */
+    .contact {
+      max-width: 700px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .contact p {
+      margin-bottom: 1rem;
+      color: var(--gray);
+    }
+
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--secondary);
+      text-align: center;
+      padding: 1.5rem;
+      color: var(--gray);
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2.2rem;
+      }
+
+      nav a {
+        margin-left: 1rem;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Team Ross</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div>
+      <h2>Multimedia • Sports • Technology</h2>
+      <p>
+        Team Ross is a creative multimedia team specializing in graphic design, video editing, software development, and sports journalism — capturing powerful sports moments through stunning visuals and digital innovation.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <h3>Our Services</h3>
+    <div class="services">
+      <div class="service-card">
+        <h4>Multimedia Production</h4>
+        <p>High-quality digital content creation for sports, media, and branding.</p>
+      </div>
+      <div class="service-card">
+        <h4>Graphic Designing</h4>
+        <p>Creative designs, posters, banners, and sports visuals that stand out.</p>
+      </div>
+      <div class="service-card">
+        <h4>Video Editing</h4>
+        <p>Professional sports highlights, documentaries, and promotional videos.</p>
+      </div>
+      <div class="service-card">
+        <h4>Software Development</h4>
+        <p>Modern websites and digital solutions tailored for media and sports.</p>
+      </div>
+      <div class="service-card">
+        <h4>Sports Journalism</h4>
+        <p>In-depth sports coverage, photography, and storytelling.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio">
+    <h3>Sports Portfolio</h3>
+    <div class="gallery">
+      <img src="Sport 1.jpeg" alt="Sports Photo 1">
+      <img src="Sport 2.jpeg" alt="Sports Photo 2">
+      <img src="Sport 3.jpeg" alt="Sports Photo 3">
+      <img src="Sport 4.jpg" alt="Sports Photo 4">
+      <img src="Sport 5.jpg" alt="Sports Photo 5">
+      <img src="Sport 6.jpg" alt="Sports Photo 6">
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h3>About Team Ross</h3>
+    <p class="about">
+      Team Ross is a passionate group of creatives and technologists dedicated to sports media. We combine creativity, storytelling, and technology to showcase sports moments through photography, video, design, and digital platforms.
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h3>Contact Us</h3>
+    <div class="contact">
+      <p>Want to work with Team Ross or feature your sports event?</p>
+      <p>Email: <a href="mailto:trusttommy58@gmail.com">trusttommy58@gmail.com</a></p>
+      <p>Follow us on social media for latest sports visuals and stories.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Team Ross. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
